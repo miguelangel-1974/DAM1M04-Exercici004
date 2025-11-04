@@ -95,9 +95,16 @@ body {
 .imagen-reducida {
   display: block;
   margin: auto;
-  width: 900px;   /* o el tamaño que quieras */
-  height: auto;   /* mantiene proporción */
-  border-radius: 10px; /* opcional */
+  width: 1100px;  
+  height: auto;  
+  border-radius: 10px; 
+}
+
+/* Para pantallas menores a 1000px (típicos móviles/tablets) */
+@media (max-width: 1000px) {
+  .imagen-reducida {
+    width: 900px;
+  }
 }
 
 .description-top {
