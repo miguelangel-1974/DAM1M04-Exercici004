@@ -1,108 +1,181 @@
-/*Globals */
+/* === GLOBALS ============================================================= */
 
+/* Reset bàsic */
 * {
   margin: 0;
+  box-sizing: border-box; /* Millor control de mides */
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #222;
-  line-height: 1.6;
 }
 
-/*Autocenter global */
+/* Contenidor centrat reutilitzable */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding:  20px;
-}
-
-/*Barra Arriba del todo*/
-.flex-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 20px;
 }
 
 .center {
   text-align: center;
 }
 
-/*Barra superior arriba del todo*/
+/* Enllaços generals */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Colors auxiliars */
+.black { 
+  color: black; 
+}
+
+.white { 
+  color: white; 
+}
+
+.blue { 
+  color: rgb(0, 140, 255); 
+}
+
+/* ========================================================================== */
+/* === BARRA SUPERIOR I BARRA STICKY ======================================== */
+/* ========================================================================== */
+
 .top-bar {
-  background-color: #fff;
   border-bottom: 1px solid #eee;
 }
 
-/* Barra fija */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Barra fixa inferior */
 .sticky-bar {
   position: sticky;
   top: 0;
   backdrop-filter: blur(12px);
   background-color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
-  z-index: 100;
 }
 
-/* Barra fija Objetos del centro*/
+/* Enllaços centrals dins la barra sticky */
 .sticky-center a {
-  text-decoration: none;
-  color: #333;
   margin: 0 12px;
-  cursor: pointer;
 }
 
+/* Botó BUY a la barra sticky */
 .btn-buy {
   background-color: #e91e63;
   color: white;
   padding: 8px 18px;
   border-radius: 50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
 .btn-buy:hover {
   background-color: #c2185b;
 }
 
-/* Seccion principal de la pagina 1 */
-.hero {
+/* ========================================================================== */
+/* === SECCIONS GENERALS (Hero i seccions fosques) ========================= */
+/* ========================================================================== */
+
+.pagina-1 {
   padding: 80px 0;
-  background-color: #fafafa;
+  background-color: #ebebeb;
 }
 
+/* Seccions negres tipus "pagina-2" */
+.pagina-2 {
+  padding: 80px 0;
+  background-color: black;
+}
 
-/* Todas las imagenes */
-.imagen-reducida{
+/* ========================================================================== */
+/* === IMATGES i MULTIMÈDIA ================================================ */
+/* ========================================================================== */
+
+/* Imatge principal reduïda */
+.imagen-reducida {
   display: block;
   margin: auto;
-  width: 1100px;   /* o el tamaño que quieras */
-  height: auto;   /* mantiene proporción */
-  border-radius: 10px; /* opcional */
+  height: auto;
+  border-radius: 10px;
+  width: 1100px;
 }
 
-/* Para pantallas menores a 1000px (típicos móviles/tablets) */
 @media (max-width: 1000px) {
   .imagen-reducida {
     width: 900px;
   }
 }
 
-.description-top{
+.imagen-reducida1400 {
+  display: block;
+  margin: auto;
+  height: auto;
+  border-radius: 10px;
+  width: 1400px; 
+}
+
+@media (max-width: 1000px) {
+  .imagen-reducida1400 {
+    width: 900px;
+  }
+}
+
+.imagen-reducida900 {
+  display: block;
+  margin: auto;
+  height: auto;
+  border-radius: 10px;
+  width: 900px; 
+}
+
+/* Vídeos centrats */
+video {
+  width: 800px;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 1000px) {
+  video {
+    width: 600px;
+  }
+}
+
+/* ========================================================================== */
+/* === TIPOGRAFIA ========================================================== */
+/* ========================================================================== */
+
+.description-top {
   width: 700px;
   font-size: 60px;
   padding: 20px;
   font-weight: bold;
   margin: auto;
-  line-height: 1.0em;
+  text-align: center;
 }
 
 .description {
   margin: 40px auto 20px;
   max-width: 800px;
   font-size: 1.1rem;
+  text-align: center;
 }
+
+/* ========================================================================== */
+/* === BOTONS ============================================================== */
+/* ========================================================================== */
 
 .btn-main {
   display: block;
@@ -112,48 +185,15 @@ body {
   color: white;
   padding: 12px 28px;
   border-radius: 50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
 .btn-main:hover {
   background-color: #c2185b;
 }
 
-/*Links generals */
-a {
-  cursor: pointer;
-  color: black;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* pagina-2 section */
-.pagina-2 {
-  padding: 80px 0;
-  background-color: black;
-}
-.description-top-pagina2{
-  width: 500px;
-  font-size: 60px;
-  padding: 20px;
-  font-weight: bold;
-  margin: auto;
-  line-height: 1.0em;
-}
-.description-pagina2 {
-  margin: 40px auto 20px;
-  max-width: 800px;
-  font-size: 1.1rem;
-}
-/* Estilo del video */
-video {
-  width: 350px;
-  border-radius: 20px;
-}
+/* ========================================================================== */
+/* === TARGETES i LAYOUT DE PRODUCTES ====================================== */
+/* ========================================================================== */
 
 .productos {
   display: flex;
@@ -161,46 +201,211 @@ video {
   gap: 20px;
 }
 
+/* Targetes negres amb text blanc */
 .tarjeta {
   flex: 1 1 400px;
   background: black;
-  border: 1px solid white;
   border-radius: 8px;
   text-align: center;
   padding: 15px;
   color: white;
 }
+
 .tarjeta img {
-  width: 30%;
-  height: 300px;
+  margin-top: 34px;
+  height: 200px;
   object-fit: cover;
   border-radius: 6px;
 }
 
-/* Siguiente pagina */
-
-.tarjeta-3 {
-  flex: 1 1 400px;
-  background: black;
+/* Targetes blanques / grises generiques */
+.tarjeta-white {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #e6e3e3;
   border-radius: 8px;
-  text-align: center;
+  padding: 15px;
+  margin: auto;
+}
+
+.tarjeta-grey {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #ebebeb;
+  border-radius: 8px;
+  padding: 15px;
+  margin: auto;
+}
+
+/* Targetes especials */
+.tarjeta-white2 {
+  width: 100%;
+  flex: 1 1 50%;
+  background: url(imatges/img_design-guides@2x.jpg);
+  border-radius: 8px;
   padding: 15px;
   color: white;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
 }
 
-.black{
-  color: black;
+.tarjeta-white2 p {
+  margin-top: 265px;
 }
 
-.white{
-  color: white
+.tarjeta-white3 {
+  width: 400px;
+  flex: 1 1 400px;
+  text-align: left;
+  background: #e6e3e3;
+  border-radius: 8px;
+  padding: 15px;
+  margin: auto; 
 }
 
-.blue{
-  color: rgb(0, 140, 255);
+.tarjeta-white5 {
+  width: 900px;
+  height: 200px;
+  background: url(imatges/img_text-on-a-path@2x.jpg) 10px;
+  border-radius: 8px;
+  padding: 15px;
+  margin: auto;
 }
 
-/* FOOTER */
+/* Contingut intern */
+.contenido-derecha {
+  max-width: 270px;
+}
+
+.container2 {
+  max-width: 900px; /* igual que .tarjeta-white */
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+/* Imatges dins targetes */
+.tarjeta-img { 
+  width: 400px; 
+  height: 300px; 
+  margin-left: auto; 
+}
+
+.tarjeta-img3 { 
+  width: 400px; 
+  height: 230px; 
+}
+
+/* ========================================================================== */
+/* === TARGETES MULTI-COLUMNA (TECH SPECS, FEATURES, ETC.) ================= */
+/* ========================================================================== */
+
+.tarjeta-white12 {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.item img {
+  width: 70px;
+}
+
+.tarjeta-white6 {
+  width: 100%;
+  max-width: 1200px;
+  background: black;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tarjeta-white6 .item {
+  flex: 1 1 calc(33.33% - 20px);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.tarjeta-white6 .item img {
+  width: 70px;
+  margin-bottom: 8px;
+}
+
+.tarjeta-white4 {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.tarjeta-white4 .item {
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tarjeta-white4 .item img {
+  width: 150px;
+  margin-bottom: 8px;
+}
+
+/* ========================================================================== */
+/* === GRID DE FUNCIONALITATS ============================================== */
+/* ========================================================================== */
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 720px;
+  margin: 20px auto 0;
+}
+
+.grid-item {
+  background-color: #d3d3d3;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-item img {
+  width: 40px;
+  margin-bottom: 12px;
+}
+
+.grid-item .text-top {
+  font-weight: bold;
+}
+
+/* ========================================================================== */
+/* === FOOTER ============================================================== */
+/* ========================================================================== */
+
 .footer {
   background-color: #ffffff;
   text-align: center;
@@ -229,20 +434,14 @@ video {
   background-color: #ebebeb;
 }
 
-.footer-column {
-  text-align: left;
-}
-
 .footer-column h3 {
   font-size: 1rem;
   margin-bottom: 12px;
-  color: #000;
 }
 
 .footer-column a {
   display: block;
   color: #555;
-  text-decoration: none;
   margin-bottom: 6px;
   font-size: 0.9rem;
 }
@@ -254,5 +453,5 @@ video {
   padding: 20px 40px 40px;
   line-height: 1.4;
   background-color: #ebebeb;
-  text-align: left;
+  text-align: center;
 }

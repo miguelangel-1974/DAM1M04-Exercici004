@@ -1,178 +1,494 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="UTF-8">
-        <title>Pagina principal</title>
-        <link rel="stylesheet" href="estils.css">
-    </head>
-    <body>
-        <!-- ▪️ Barra superior -->
-        <div class="top-bar">
-            <div class="container flex-between">
-                <a href="/index.html">Pixelmator Pro</a>
-                <a href="https://www.pixelmator.com/photomator/">Photomator</a>
-                <a href="https://www.pixelmator.com/blog/">Blog</a>
-                <a href="https://support.pixelmator.com/">Support</a>
-                </nav>
-            </div>
+  <head>
+      <meta charset="UTF-8">
+      <title>Pagina principal</title>
+      <link rel="stylesheet" href="estils.css">
+  </head>
+  <body>
+    <!-- ▪️ Barra superior -->
+    <div class="top-bar">
+      <div class="container flex-between">
+          <a href="index.html">Pixelmator Pro</a>
+          <a href="https://www.pixelmator.com/photomator/">Photomator</a>
+          <a href="https://www.pixelmator.com/blog/">Blog</a>
+          <a href="https://support.pixelmator.com/">Support</a>
+      </div>
+    </div>
+
+    <!-- ▪️ Barra sticky inferior amb “Pixelmator Pro 3.7” -->
+    <div class="sticky-bar">
+      <div class="container flex-between">
+        <div class="sticky-left">
+          <a href="index.html" class="logo">Pixelmator Pro 3.7</a>
         </div>
 
-        <!-- ▪️ Barra sticky inferior amb “Pixelmator Pro 3.7” -->
-        <div class="sticky-bar">
-            <div class="container flex-between">
-                <div class="sticky-left">
-                    <a href="/index.html" class="logo">Pixelmator Pro 3.7</a>
-                </div>
-
-                <div class="sticky-center">
-                    <a href="/index.html">Overview</a>
-                    <a href="https://www.pixelmator.com/pro/tech-specs/">Tech Specs</a>
-                    <a href="https://support.pixelmator.com/pixelmator-pro-user-guide/">User Guide</a>
-                </div>
-
-                <div class="sticky-right">
-                    <a href="https://apps.apple.com/us/app/pixelmator-pro/id1289583905?mt=12&ls=1" class="btn-buy">Buy</a>
-                </div>
-            </div>
+        <div class="sticky-center">
+          <a href="index.html">Overview</a>
+          <a href="https://www.pixelmator.com/pro/tech-specs/">Tech Specs</a>
+          <a href="https://support.pixelmator.com/pixelmator-pro-user-guide/">User Guide</a>
         </div>
 
-        <!-- ▪️ Secció principal -->
-        <section class="hero">
-            <div class="container center">
-                <p class="description-top">Professional image editing tools that anyone can use.</p>
-                <div>
-                    <img src="./imatges/img_hero@2x.png" alt="foto" class="imagen-reducida"></img>
-                </div>
-                <p class="description">Pixelmator Pro és un editor d’imatges dissenyat per oferir les eines d’edició més potents i accessibles per a tothom. Amb una extensa col·lecció d’eines per editar i retocar fotos, crear dissenys gràfics, pintar, dibuixar gràfics vectorials i afegir efectes sorprenents, és l’únic editor d’imatges que necessites.</p>
-                <a href="https://apps.apple.com/us/app/pixelmator-pro/id1289583905?mt=12&ls=1" class="btn-main">Buy now</a>
-            </div>
-        </section>
+        <div class="sticky-right">
+          <a href="https://apps.apple.com/us/app/pixelmator-pro/id1289583905?mt=12&ls=1" class="btn-buy">Buy</a>
+        </div>
 
-        <section class="pagina-2">
-            <div class="container center">
-                <p class="description-top-pagina2 white">Draw and illustrate with a full collection of vector tools.</p>
-                <br>
-                <p class="description-pagina2 white">Pixelmator Pro comes with a full set of vector tools for creating resolution-independent designs. It includes easily-customizable smart shapes, a large collection of pre-designed shapes, and support for vector file formats including PSD, SVG, PDF, Adobe Illustrator, and Illustrator EPS.</p>
-                <div>
-                    <img src="./imatges/img_draw@2x.png" alt="foto" class="imagen-reducida"></img>
-                </div>
-                <div class="productos">
-                    <div class="tarjeta">
-                        <h1>Resolution Independent</h1>
-                        <p>Vector shapes are resolution-independent, so curves always look smooth and edges always stay sharp, no matter how much you resize each shape or even entire vector designs.</p>
-                        <img src="./imatges/img_draw-resolution-independent@2x.jpg" alt="">
-                    </div>
-                    <div class="tarjeta">
-                        <h1>Vector Support</h1>
-                        <p>Pixelmator Pro supports vector file formats, including PSD, SVG, PDF, Adobe Illustrator, and Illustrator EPS, so you can effortlessly edit shapes and paths in these files, and export them while keeping all their vector data.</p>
-                        <img src="./imatges/ico_vector-support@2x.png" alt="">
-                    </div>
-                    <div class="tarjeta">
-                        <br>
-                        <br>
-                        <br>
-                        <h1 class="left">Smart Shapes</h1>
-                        <p class="left">With a collection of pre-made Smart Shapes, you can quickly add star and various polygon shapes, arrows, speech bubbles, and other shapes to your compositions, then customize them in any way you want.</p>
-                        <!-- Video de la estrella -->
-                        <video autoplay loop muted>
-                        <source src="./imatges/video_smart-shapes.mov" type="video/mp4" class="">
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </section>
+      </div>
+    </div>
 
-        <section class="pagina-2">
-            <div class="container center">
-                <p class="description-top-pagina2 white">Powerful tools for perfecting your photos.</p>
-                <br>
-                <p class="description-pagina2 white">The collection of powerful, nondestructive color adjustments in Pixelmator Pro lets you edit the colors in your photos, or even videos, in any way you want. And with full support for RAW photos, a collection of stunning adjustment presets, and incredible retouching tools, it couldn’t be easier to turn good-looking photos spectacular.</p>
-                <div>
-                    <img src="./imatges/img_tools--v1@2x.png" alt="foto" class="imagen-reducida"></img>
-                </div>
+    <!-- ▪️ Secció principal -->
+    <section>
+      <div class="container center">
+        <p class="description-top">Professional image editing tools that anyone can use.</p>
+        <div>
+          <img src="./imatges/img_hero@2x.png" class="imagen-reducida"></img>
+        </div>
+        <p class="description">Pixelmator Pro és un editor d’imatges dissenyat per oferir les eines d’edició més potents i accessibles per a tothom. Amb una extensa col·lecció d’eines per editar i retocar fotos, crear dissenys gràfics, pintar, dibuixar gràfics vectorials i afegir efectes sorprenents, és l’únic editor d’imatges que necessites.</p>
+        <a href="https://apps.apple.com/us/app/pixelmator-pro/id1289583905?mt=12&ls=1" class="btn-main">Buy now</a>
+      </div>
+    </section>
+
+    <section class="pagina-2">
+      <div class="container center">
+        <p class="description-top white">Draw and illustrate with a full collection of vector tools.</p>
+        <br>
+        <p class="description white">Pixelmator Pro comes with a full set of vector tools for creating resolution-independent designs. It includes easily-customizable smart shapes, a large collection of pre-designed shapes, and support for vector file formats including PSD, SVG, PDF, Adobe Illustrator, and Illustrator EPS.</p>
+        <div>
+          <img src="./imatges/img_draw@2x.png" class="imagen-reducida"></img>
+        </div>
+        <div class="productos">
+        <div class="tarjeta">
+            <h1>Resolution Independent</h1>
+            <p>Vector shapes are resolution-independent, so curves always look smooth and edges always stay sharp, no matter how much you resize each shape or even entire vector designs.</p>
+            <img src="./imatges/img_draw-resolution-independent@2x.jpg">
+        </div>
+        <div class="tarjeta">
+            <h1>Vector Support</h1>
+            <p>Pixelmator Pro supports vector file formats, including PSD, SVG, PDF, Adobe Illustrator, and Illustrator EPS, so you can effortlessly edit shapes and paths in these files, and export them while keeping all their vector data.</p>
+            <img src="./imatges/ico_vector-support@2x.png">
+        </div>
+        <div class="tarjeta">
+            <br><br><br>
+            <h1 class="left">Smart Shapes</h1>
+            <p class="left">With a collection of pre-made Smart Shapes, you can quickly add star and various polygon shapes, arrows, speech bubbles, and other shapes to your compositions, then customize them in any way you want.</p>
+            <br>
+            <!-- Video de la estrella -->
+            <video autoplay loop muted>
+              <source src="./imatges/video_smart-shapes.mov" type="video/mp4">
+            </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="pagina-2">
+      <div class="container center">
+        <p class="description-top white">Powerful tools for perfecting your photos.</p>
+        <br>
+        <p class="description white">The collection of powerful, nondestructive color adjustments in Pixelmator Pro lets you edit the colors in your photos, or even videos, in any way you want. And with full support for RAW photos, a collection of stunning adjustment presets, and incredible retouching tools, it couldn’t be easier to turn good-looking photos spectacular.</p>
+        <div>
+          <img src="./imatges/img_tools--v1@2x.png" class="imagen-reducida"></img>
+        </div>
                 <!-- Sección de herramientas de color y edición -->
-                <div class="productos">
-                    <div class="tarjeta-3">
-                        <h1>Edit the colors in your photos in any way you want.</h1>
-                        <p>In Pixelmator Pro, you’ll find everything from essential color adjustments like brightness, contrast, and exposure to advanced tools like multi-channel curves and wheel-based color balance.</p>
-                    </div>
-                    <div class="tarjeta-3">
-                        <h1>Enhance photos automagically.</h1>
-                        <p>Many of the most important adjustments can be applied automatically, using a machine learning algorithm trained on 20 million photos.</p>
-                    </div>
+        <div class="productos">
+          <div class="tarjeta">
+            <h1>Edit the colors in your photos in any way you want.</h1>
+            <p>In Pixelmator Pro, you’ll find everything from essential color adjustments like brightness, contrast, and exposure to advanced tools like multi-channel curves and wheel-based color balance.</p>
+          </div>
+          
+          <div class="tarjeta">
+            <h1>Enhance photos automagically.</h1>
+            <p>Many of the most important adjustments can be applied automatically, using a machine learning algorithm trained on 20 million photos.</p>
+          </div>
 
-                    <div class="tarjeta-3">
-                        <h1>Perfect every detail.</h1>
-                        <p>Magically remove unwanted objects, clone parts of your photos, lighten or darken precise areas, and do much more. All by using simple brushstrokes to retouch just the areas you want, so all your shots look picture-perfect.</p>
-                    </div>
+          <div class="tarjeta">
+            <h1>Perfect every detail.</h1>
+            <p>Magically remove unwanted objects, clone parts of your photos, lighten or darken precise areas, and do much more. All by using simple brushstrokes to retouch just the areas you want, so all your shots look picture-perfect.</p>
+          </div>
 
-                    <div class="tarjeta-3">
-                        <h1>Effortless RAW editing.</h1>
-                        <p>Pixelmator Pro supports RAW photos from over 750 of the most popular digital cameras. What’s more, you can add RAW photos as RAW layers and edit directly without having to convert or preprocess them.</p>
-                        <a href="https://support.pixelmator.com/faq-pixelmator-pro/resources/digital-camera-raw-formats-supported-in-pixelmator-pro" class="blue">View supported RAW formats</a>
-                    </div>
+          <div class="tarjeta">
+            <h1>Effortless RAW editing.</h1>
+            <p>Pixelmator Pro supports RAW photos from over 750 of the most popular digital cameras. What’s more, you can add RAW photos as RAW layers and edit directly without having to convert or preprocess them.</p>
+            <a href="https://support.pixelmator.com/faq-pixelmator-pro/resources/digital-camera-raw-formats-supported-in-pixelmator-pro" class="blue">View supported RAW formats</a>
+          </div>
 
-                    <div class="tarjeta-3">
-                        <h1>Make advanced color edits using color adjustments layers.</h1>
-                        <p>Use color adjustments layers to combine different color adjustments, selectively edit photos with incredible precision, and change the look of layered compositions with ease.</p>
-                    </div>
-                </div>
+          <div class="tarjeta">
+            <h1>Make advanced color edits using color adjustments layers.</h1>
+            <p>Use color adjustments layers to combine different color adjustments, selectively edit photos with incredible precision, and change the look of layered compositions with ease.</p>
+          </div>
+        </div>
+        <br><br>
+        <a href="index.html" class="blue">See the full list of adjustments</a>
+      </div>
+    </section>
+
+    <!--Siguiente pagina-->
+    <section">
+      <div class="container center">
+        <p class="description-top black">Everything you need to create beautiful designs.</p>
+        <p class="description black">Whether you’re working on a design for a poster, a webpage, or a blockbuster app, you’ll make your ideas come to life in Pixelmator Pro. With smart spacing guides, advanced alignment tools, and blazing fast performance, you can harness the full power of layer-based editing.</p>
+        <img src="./imatges/img_design--v1@2x.png" class="imagen-reducida">
+      </div>
+
+      <div class="tarjeta-white"> 
+        <h1>Layer-Based Editing</h1>
+        <p>Use simple buildings blocks – shape, text, video, and image layers – to create stunning compositions and designs. Add layers in delightfully quick and simple ways, such as by dragging and dropping them straight into Pixelmator Pro, or using the built-in Photo Browser.</p>
+        <img src="imatges/img_design-layers@2x.jpg" class="tarjeta-img">
+      </div>
+
+      <br>
+
+      <div class="container2">
+        <div class="productos">
+          <div class="tarjeta-white2">
+            <p>The Arrange tool makes it incredibly easy to create designs. It lets you automatically select layers by clicking them on the canvas, intelligently snaps layers into position as you move them around, and even lets you align and distribute layers automatically.</p>
+          </div>
+
+          <div class="tarjeta-white3">
+            <img src="imatges/img_design-layer-styles@2x.jpg" class="tarjeta-img3">
+            <h1>Layer Styles</h1>
+            <p>Nondestructively customize the look of any layer in your image by adding fills, strokes, and shadows, or any combination of multiple styles. And with presets, you can save your favorite combinations, use them in any of your images, and even share them with others.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h1 class="description-top black">Create stunning designs like a pro – even if you’re a beginner.</h1>
+        <p class="description black">Create eye‑catching designs with ease using stunning design templates and see them come to life in beautiful, fully‑customizable mockups.</p>
+        <img src="imatges/img_hero-top.png" class="imagen-reducida1400">
+      </div>
+    </section>
+
+    <!--Siguiente pagina-->
+
+    <section class="pagina-2 center">
+      <div>
+        <h1 class="description-top white">Choose a workspace that works for you.</h1>
+        <p class="description white">Customize the Pixelmator Pro workspace to make it work for you — move the Tools and Layers sidebars wherever you want and completely customize the list of tools. Or choose one of the built-in presets created especially for photographers, designers, painters, and illustrators.</p>
+        <img src="imatges/img_workspace-painting-v2.png" class="imagen-reducida">
+      </div>
+    </section>
+
+    <!--Siguiente pagina-->
+
+    <section class="pagina-1">
+      <div>
+        <h1 class="description-top">Remove the background from any image with just a click.</h1>
+        <p class="description">The jaw-dropping, Core ML-powered Remove Background feature removes the background from any image with just a click. Using a combination of machine-learning algorithms, Pixelmator Pro automatically selects the subject, refines the edges of the selection, then removes any traces of the previous background from the object’s edges.</p>
+        <img src="imatges/img_remove-bg.png" class="imagen-reducida">
+      </div>
+
+      <div>
+        <h1 class="description-top">Image editing powered by machine learning.</h1>
+        <p class="description">To deliver more intelligent image editing, Pixelmator Pro uses machine learning — a technology that allows computers to gain knowledge to perform specific tasks more like a person than a computer. Which enabled us to create features that have never before been possible.</p>
+        <div class="items-grid">
+          <div class="grid-item">
+            <img src="imatges/img_ml-enhance@2x.png" alt="Item 1">
+            <p class="text-top">ML Enhance</p>
+            <p class="text-bottom">Automatically enhance photos like a pro photographer.</p>
+          </div>
+          <div class="grid-item">
+            <img src="imatges/img_ml-super-resolution@2x.png" alt="Item 2">
+            <p class="text-top">Super Resolution</p>
+            <p class="text-bottom">Magically increase the resolution of images while preserving sharpness and details.</p>
+          </div>
+          <div class="grid-item">
+            <img src="imatges/img_ml-match-colors@2x.png" alt="Item 3">
+            <p class="text-top">Match Colors</p>
+            <p class="text-bottom">Quickly and easily match the colors and style of any photo.</p>
+          </div>
+          <div class="grid-item">
+            <img src="imatges/img_ml-denoise@2x.png" alt="Item 4">
+            <p class="text-top">Denoise</p>
+            <p class="text-bottom">Effortlessly remove camera noise and image compression artifacts from photos.</p>
+          </div>
+          <div class="grid-item">
+            <img src="imatges/img_quick-selection-tool@2x.png" alt="Item 5">
+            <p class="text-top">Quick Selection Tool</p>
+            <p class="text-bottom">Quickly make accurate selections with ease.</p>
+          </div>
+          <div class="grid-item">
+            <img src="imatges/ico_ml-crop@2x.png" alt="Item 6">
+            <p class="text-top">Crop</p>
+            <p class="text-bottom">Improve the composition of photos with just a click.</p>
+          </div>
+          <div class="grid-item">
+            <img src="imatges/ico_remove-background@2x.png" alt="Item 7">
+            <p class="text-top">Remove Background</p>
+            <p class="text-bottom">Remove the background from any image with just a click.</p>
+          </div>
+          <div class="grid-item">
+            <img src="imatges/ico_select-subject@2x.png" alt="Item 8">
+            <p class="text-top">Select Subject</p>
+            <p class="text-bottom">Automatically select the subjects of images with ease.</p>
+          </div>
+          <div class="grid-item">
+            <img src="imatges/img_select-and-mask.png" alt="Item 9">
+            <p class="text-top">Select and Mask Tool</p>
+            <p class="text-bottom">Easily make advanced selections of challenging image areas like hair or fur.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--Siguiente pagina-->
+
+    <section>
+      <div>
+        <br><br><br><br><br><br><br>
+        <h1 class="description-top">Magically get rid of unwanted objects.</h1>
+        <p class="description">Make small imperfections or even entire objects disappear from your images by painting over them with the Repair Tool. No matter how complex the background, the Repair Tool can make almost any object vanish without a trace.</p>
+          <video autoplay loop muted>
+            <source src="./imatges/video_repair.mp4" class="video">
+          </video>
+      </div>
+
+      <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1 class="description-top">Edit your photos piece by piece. Or combine several photos into one.</h1>
+        <p class="description">With a collection of pixel-accurate selection tools powered by state-of-the-art technology, Pixelmator Pro lets you pick out and edit precise parts of your images with ease. So you can apply color adjustments and effects to specific areas. Select and copy objects from one image to another. Or focus all edits on a precise area without affecting the rest of the image.</p>
+        <img src="imatges/img_selection-basic.png" class="imagen-reducida">
+        <p class="description">Thanks to its advanced algorithm, the Quick Selection tool lets you easily select even the most challenging objects and areas with just a few brushstrokes.</p>
+      </div>
+
+      <div>
+        <br><br><br><br><br><br><br>
+        <h1 class="description-top">Easily design</h1>
+        <p class="description">Using the powerful Type tools in Pixelmator Pro, you can easily design great-looking text in all your images. Effortlessly create curved text or type along shapes and paths. And use a full set of typography tools to customize text in any way you can imagine.</p>
+        <div class="tarjeta-white5">
+            <div class="contenido-derecha white">
+              <p>Type on a Path</p>
+              <br>
+              <p>Pixelmator Pro includes a range of intuitive and easy-to-use tools for designing curved and circular text. Use the Circular Type tool to create circular text, the Path Type tool to create path text, or type text around the edges of any default or even custom shape.</p>
             </div>
-        </section>
+        </div>
+      </div>
+      <br><br><br><br><br><br><br>
+    </section>
 
-        <!--Siguiente pagina-->
-        <section class="hero">
-            <div class="container center">
-                <p class="description-top black">Everything you need to create beautiful designs.</p>
-                <p class="description black">Whether you’re working on a design for a poster, a webpage, or a blockbuster app, you’ll make your ideas come to life in Pixelmator Pro. With smart spacing guides, advanced alignment tools, and blazing fast performance, you can harness the full power of layer-based editing.</p>
-                <img src="./imatges/img_design--v1@2x.png" class="imagen-reducida">
-            </div>
-        </section>
+    <!--Siguiente pagina-->
 
-        <!-- ▪️ Footer -->
-        <footer class="footer">
-            <div class="footer-main">
-                <img src="./imatges/ico_pixelamtor-pro-2.0@2x.png" alt="Pixelmator Pro" class="footer-logo">
-                <h2>Pixelmator Pro</h2>
-                <p>Available on the Mac App Store for $49.99.</p>
-                <a href="https://apps.apple.com/us/app/pixelmator-pro/id1289583905?mt=12&ls=1" class="btn-main">Buy now</a>
-                <br>
-                <br>
-            </div>
+    <section class="pagina-1">
+      <div>
+        <h1 class="description-top">Real-time, nondestructive, blockbuster effects.</h1>
+        <p class="description">Pixelmator Pro comes with a collection of over 60 versatile effects that you can mix and combine to develop any artistic or special effects you can imagine. Effects are nondestructive, so you can always edit, rearrange, or remove an effect after applying it. And you can even apply multiple effects to a single layer — seeing all your changes in real time.</p>
+        <img src="imatges/img_effects@2x.png" class="imagen-reducida">
+      </div>
+    </section>
 
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h3>Pixelmator Pro</h3>
-                    <a href="/index.html">Overview</a>
-                    <a href="https://apps.apple.com/us/app/pixelmator-pro/id1289583905?mt=12&ls=1">Buy</a>
-                    <a href="https://www.pixelmator.com/pro/tech-specs/">Tech Specs</a>
-                    <a href="https://support.pixelmator.com/pixelmator-pro-user-guide">User Guide</a>
-                </div>
-                <div class="footer-column">
-                    <h3>Photomator</h3>
-                    <a href="https://www.pixelmator.com/photomator/">Overview</a>
-                    <a href="https://apps.apple.com/us/app/photomator-photo-editor/id1444636541">Buy</a>
-                    <a href="https://support.pixelmator.com/photomator-user-guide">User Guide</a>
-                </div>
-                <div class="footer-column">
-                    <h3>Pixelmator for iOS</h3>
-                    <a href="https://www.pixelmator.com/ios/">Overview</a>
-                    <a href="https://apps.apple.com/us/app/pixelmator/id924695435?ign-mpt=uo%3D4">Buy</a>
-                </div>
-                <div class="footer-column">
-                    <h3>Pixelmator Team</h3>
-                    <a href="https://www.pixelmator.com/blog/">Blog</a>
-                    <a href="https://support.pixelmator.com/">Support</a>
-                    <a href="https://www.apple.com/legal/privacy/en-ww/">Privacy Policy</a>
-                </div>
-            </div>
+    <!--Siguiente pagina-->
 
-            <div class="footer-legal">
-                <p>Corporate Address: Apple Inc., One Apple Park Way, Cupertino, CA 95014</p>
-                <p>Contact Email: info@pixelmator.com</p>
-                <p>Data about the company is registered with Secretary of State of the State of California under entity number 08086592.</p>
-                <p>Copyright © 2025 Apple Inc. All rights reserved.</p>
-            </div>
-        </footer>
-    </body>
+    <section>
+      <div>
+        <br><br><br><br><br><br><br>
+        <h1 class="description-top">Turn your Photos app into an image editing powerhouse.</h1>
+        <p class="description">The Pixelmator Pro editing extension makes the entire Pixelmator Pro app and all its features available right inside Photos. So you can edit using Pixelmator Pro without ever leaving Photos, keeping all your nondestructive edits saved inside your library. Your Photos app is now a full-featured, layer-based image editor.</p>
+        <img src="imatges/img_extension.png" class="imagen-reducida900">
+        <br><br><br><br><br><br><br>
+      </div>
+    </section>
+
+    <!--Siguiente pagina-->
+
+    <section class="pagina-1">
+      <h1 class="description-top">Advanced features for advanced workflows.</h1>
+      <p class="description">Pixelmator Pro is designed from the ground up to be easy to use for beginners. But it’s ready to progress with you as you start mastering image editing, so you’ll also find many advanced features like Export for Web, Soft Proofing, support for Adobe Photoshop files, color management, AppleScript, and more.</p>
+      <div class="tarjeta-grey">
+        <div class="item">
+          <img src="imatges/ico_optimize-for-web@2x.png">
+          <p>Optimize for Web</p>
+        </div>
+        <div class="item">
+          <img src="imatges/ico_soft-proofing@2x.png">
+          <p>Soft Proofing</p>
+        </div>
+        <div class="item">
+          <img src="imatges/ico_color-management@2x.png">
+          <p>Color Management</p>
+        </div>
+        <div class="item">
+          <img src="imatges/ico_psd@2x.png">
+          <p>PSD Files</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://www.pixelmator.com/pro/tech-specs/" class="blue">See full tech specs</a>
+      </div>
+    </section>
+
+    <!--Siguiente pagina-->
+
+    <section>
+      <br><br><br>
+      <img src="imatges/img_dock@2x.jpg" class="imagen-reducida">
+      <h1 class="description-top">Designed and built exclusively for Mac.</h1>
+      <p class="description">From its app icon and the way it looks and feels to the technologies it supports, Pixelmator Pro has been designed to be the ultimate Mac app. Enjoy full support for every Mac feature and technology you’d expect — iCloud, Versions, Shortcuts, Sidecar, Apple Pencil, and many others.</p>
+      <br><br><br><br>
+      <div class="tarjeta-white12">
+        <div class="item">
+          <img src="imatges/ico_universal@2x.png">
+          <p>Universal App</p>
+        </div>
+        <div class="item">
+          <img src="imatges/ico_icloud-drive@2X.png">
+          <p>iCloud Drive</p>
+        </div>
+        <div class="item">
+          <img src="imatges/ico_photos-extension@2x.png">
+          <p>Photos Extension</p>
+        </div>
+        <div class="item">
+          <img src="imatges/ico_retina-display@2x.png">
+          <p>Retina Display</p>
+        </div>
+        <div class="item">
+          <img src="imatges/ico_light-and-dark-appearance@2x.png">
+          <p>Light and Dark Appearance</p>
+        </div>
+        <div class="item">
+          <img src="imatges/ico_universal-control@2x.png">
+          <p>Universal Control</p>
+        </div>
+        <div class="item">
+          <img src="imatges/ico_sidecar@2x.png">
+          <p>Sidecar</p>
+        </div>
+        <div class="item">
+          <img src="imatges/ico_apple-pencil@2x.png">
+          <p>Apple Pencil</p>
+        </div>
+        <div class="item">
+          <img src="imatges/ico_shortcuts@2x.png">
+          <p>Shortcuts</p>
+        </div>
+        <div class="item">
+          <img src="imatges/ico_applescript@2x.png">
+          <p>AppleScript</p>
+        </div>
+        <div class="item">
+          <img src="imatges/ico_versions@2x.png">
+          <p>Versions</p>
+        </div>
+        <div class="item">
+          <img src="imatges/ico_facetime@2x.png">
+          <p>FaceTime Camera</p>
+        </div>
+      </div>
+      <br><br><br>
+    </section>
+
+    <!--Siguiente pagina-->
+
+    <section class="pagina-2">
+      <h1 class="description-top white">Powered by the latest Mac technologies.</h1>
+      <p class="description white">The Pixelmator Pro image editing engine is seriously sophisticated and incredibly powerful. It’s designed exclusively to take advantage of the full power of Mac computers, using advanced Mac graphics technologies like Metal and Core Image. Pushing the boundaries of image editing, Pixelmator Pro also includes machine learning-enhanced editing features powered by Core ML. So tools aren’t just blistering fast — they’re whip smart too.</p>
+      <br><br><br>
+      <div class="tarjeta-white6 white">
+        <div class="item">
+          <img src="imatges/ico_apple-silicon@2x.png">
+          <p>Apple Silicon</p>
+          <p>Pixelmator Pro runs natively on Mac devices powered by Apple silicon, taking full advantage of its incredible performance.</p>
+        </div>
+        <div class="item">
+          <img src="imatges/img_metal@2x.png">
+          <p>Metal</p>
+          <p>Using Metal, Pixelmator Pro harnesses the full graphics processing power of every Mac.</p>
+        </div>
+        <div class="item">
+          <img src="imatges/img_coreml@2x.png">
+          <p>Core ML</p>
+          <p>The groundbreaking machine learning features in Pixelmator Pro are integrated using Core ML, which brings the best possible ML processing performance on Mac.</p>
+        </div>
+        <div class="item">
+          <img src="imatges/img_swift@2x.png">
+          <p>Built with Swift</p>
+          <p>Swift is a modern programming language built for efficiency, reliability, and top-notch performance.</p>
+        </div>
+        <div class="item">
+          <img src="imatges/img_core-image@2x.png">
+          <p>Core Image</p>
+          <p>Core Image greatly speeds up processing images, enabling blazing fast, nondestructive editing.</p>
+        </div>
+        <div class="item">
+          <img src="imatges/img_swiftui@2x.png">
+          <p>SwiftUI</p>
+          <p>High-performance UI animations are powered by SwiftUI.</p>
+        </div>
+      </div>
+      <br><br><br>
+    </section>
+
+    <!--Siguiente pagina-->
+
+    <section class="pagina-1">
+      <div>
+        <h1 class="description-top">We know you'll love Pixelmator Pro. But don't take our word for it.</h1>
+        <p class="description">Pixelmator Pro has an average worldwide rating of 4.8 stars out of 5 with over 48,000 five-star ratings. It also has a Mac App of the Year award and proudly sports an Editors’ Choice badge on the Mac App Store. We think you’ll love it — and we’re not the only ones.</p>
+      </div>
+      <br><br><br>
+      <div class="tarjeta-white4">
+        <div class="item">
+          <img src="imatges/img_app-of-the-year@2x.png" alt="Item 1">
+          <p>Awarded Mac App of the Year by Apple.</p>
+        </div>
+        <div class="item">
+          <img src="imatges/img_editors-choice-v1@2x.png" alt="Item 2">
+          <p>Highlighted as an Editors’ Choice on the Mac App Store.</p>
+        </div>
+        <div class="item">
+          <img src="imatges/img_rating@2x.png" alt="Item 3">
+          <p>Rated 4.8 worldwide with over 55,500 ratings.</p>
+        </div>
+        <div class="item">
+          <img src="imatges/ico_stars@2x.png" alt="Item 4">
+          <p>Received over 48,000 five-star ratings worldwide.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ▪️ Footer -->
+    <footer class="footer">
+      <br><br><br><br><br><br><br><br><br>
+      <div class="footer-main">
+        <img src="./imatges/ico_pixelamtor-pro-2.0@2x.png" class="footer-logo">
+        <h2>Pixelmator Pro</h2>
+        <p>Available on the Mac App Store for $49.99.</p>
+        <a href="https://apps.apple.com/us/app/pixelmator-pro/id1289583905?mt=12&ls=1" class="btn-main">Buy now</a>
+      </div>
+      <br><br><br><br><br><br><br><br><br>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Pixelmator Pro</h3>
+          <a href="/index.html">Overview</a>
+          <a href="https://apps.apple.com/us/app/pixelmator-pro/id1289583905?mt=12&ls=1">Buy</a>
+          <a href="https://www.pixelmator.com/pro/tech-specs/">Tech Specs</a>
+          <a href="https://support.pixelmator.com/pixelmator-pro-user-guide">User Guide</a>
+        </div>
+        <div class="footer-column">
+          <h3>Photomator</h3>
+          <a href="https://www.pixelmator.com/photomator/">Overview</a>
+          <a href="https://apps.apple.com/us/app/photomator-photo-editor/id1444636541">Buy</a>
+          <a href="https://support.pixelmator.com/photomator-user-guide">User Guide</a>
+        </div>
+        <div class="footer-column">
+          <h3>Pixelmator for iOS</h3>
+          <a href="https://www.pixelmator.com/ios/">Overview</a>
+          <a href="https://apps.apple.com/us/app/pixelmator/id924695435?ign-mpt=uo%3D4">Buy</a>
+        </div>
+        <div class="footer-column">
+          <h3>Pixelmator Team</h3>
+          <a href="https://www.pixelmator.com/blog/">Blog</a>
+          <a href="https://support.pixelmator.com/">Support</a>
+          <a href="https://www.apple.com/legal/privacy/en-ww/">Privacy Policy</a>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <p>Corporate Address: Apple Inc., One Apple Park Way, Cupertino, CA 95014</p>
+        <p>Contact Email: info@pixelmator.com</p>
+        <p>Data about the company is registered with Secretary of State of the State of California under entity number 08086592.</p>
+        <p>Copyright © 2025 Apple Inc. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </body>
 </html>
